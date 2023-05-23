@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import Panel from "./Panel";
+import Form from "./Form";
+import Counter from "./useReducer_Practice/Counter";
 
 function App() {
 	const [showText, setShowText] = useState(0);
 	return (
 		<div>
-			<Panel
+			{/* <Panel
 				isActive={showText === 0}
 				onShow={() => setShowText(0)}
 				title="Kazahkstan"
@@ -43,7 +45,9 @@ function App() {
 				patterns and generalities beyond history. Metahistorians such as Oswald
 				Spengler and Arnold Toynbee saw history in terms of these general
 				patterns according to which civilizations rise and fall.
-			</Panel>
+			</Panel> */}
+			{/* <Form /> */}
+			<Counter />
 		</div>
 	);
 }
